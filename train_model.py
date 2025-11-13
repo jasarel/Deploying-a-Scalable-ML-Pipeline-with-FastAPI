@@ -39,7 +39,7 @@ X_train, y_train, encoder, lb = process_data(
     train,
     categorical_features=cat_features,
     label, 
-    training=True
+    training=True,
     # your code here
     # use the train dataset 
     # use training=True
@@ -90,7 +90,7 @@ for col in cat_features:
             label, 
             encoder=encoder,
             lb=lb,
-            model=model
+            model=model,
             # your code here
             # use test, col and slicevalue as part of the input
         )
