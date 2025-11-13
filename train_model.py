@@ -37,8 +37,8 @@ cat_features = [
 # TODO: use the process_data function provided to process the data.
 X_train, y_train, encoder, lb = process_data(
     train,
-    categorical_features=cat_features,
-    label, 
+    label="salary",
+    categorical_features=cat_features, 
     training=True,
     # your code here
     # use the train dataset 
@@ -87,7 +87,7 @@ for col in cat_features:
             column_name=col,
             slice_value=slicevalue,
             categorical_features=cat_features,
-            label, 
+            label="salary", 
             encoder=encoder,
             lb=lb,
             model=model,
