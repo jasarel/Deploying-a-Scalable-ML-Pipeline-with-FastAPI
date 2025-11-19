@@ -26,7 +26,7 @@ def test_metrics():
     """
     # Create sample data
     y = [0, 1, 1, 0]
-    preds = =[0, 1, 0, 0]
+    preds = [0, 1, 0, 0]
 
     precision, recall, fbeta = compute_model_metrics(y, preds)
 
