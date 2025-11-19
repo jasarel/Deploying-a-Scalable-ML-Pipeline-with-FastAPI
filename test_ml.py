@@ -1,6 +1,6 @@
 import pytest
 # TODO: add necessary import
-from sklearn.ensemble import RandomForestClassifer
+from sklearn.ensemble import RandomForestClassifier
 from ml.model import train_model, compute_model_metrics, inference
 from sklearn.model_selection import train_test_split
 
@@ -15,8 +15,8 @@ def test_model_algorithm():
 
     model = train_model(X,y)
 
-    assert isinstance(model, RandomForestClassifer), \ 
-    f"Expected model to be RandomForestClassifer, got {type(model).__name__} instead"
+    assert isinstance(model, RandomForestClassifier), \
+    f"Expected model to be RandomForestClassifier, got {type(model).__name__} instead"
 
 
 # TODO: implement the second test. Change the function name and input as needed
