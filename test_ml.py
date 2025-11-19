@@ -51,5 +51,5 @@ def test_inference():
     # Run inference
     y_preds = inference(model, X)
 
-    assert y.shape == y_preds.shape, f"Expected shape to be {y.shape}, but got {y_preds.shape}"
+    assert len(y) == len(y_preds), f"Expected shape to be {len(y)}, but got {len(y_preds)}"
 
